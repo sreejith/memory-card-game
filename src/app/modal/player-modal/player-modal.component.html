@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Memory Card Game</h1>
+<div mat-dialog-content>
+  <p>Enter player names and start the fun!</p>
+  <mat-form-field appearance="outline" class="mr-5">
+    <mat-label>Player 1 - Name</mat-label>
+    <input matInput placeholder="Enter a nick name" [(ngModel)]="player1" required>
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Player 2 - Name</mat-label>
+    <input matInput placeholder="Enter a nick name" [(ngModel)]="player2" required>
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" class="btn btn-primary start-btn" (click)="startGame()">Start game</button>
+</div>

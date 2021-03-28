@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="text-center">
+  Memory Card Game
+</mat-toolbar>
+<div class="container container-center">
+  <div class="player-card-grid p-16 mb-4">
+    <mat-card *ngFor="let player of players; let i=index" [ngClass]="{'current-player': player.isCurrentPlayer}">
+      <mat-card-header>
+        <mat-card-title>{{ player.playerName }} <span *ngIf="player.isCurrentPlayer">'s turn</span></mat-card-title>
+        <mat-card-subtitle [ngClass]="{'current-player': player.isCurrentPlayer}">Score - {{ player.score }}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <div class="grid p-16">
+    <app-card *ngFor="let card of cardsArry; let i=index" [data]="card" (cardClicked)="cardClicked(i)">
+    </app-card>
+  </div>
+</div>

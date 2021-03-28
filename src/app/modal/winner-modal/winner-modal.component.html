@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Congratulation {{data.playerName}} </h1>
+<div mat-dialog-content>
+  <p></p>
+  You have won the game!
+  <div class="winner mx-5 my-4">
+    <img src="assets/images/winner.png">
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" class="btn btn-primary start-btn mr-4" (click)="replayGame()">Replay game</button>
+  <button mat-button color="primary" class="btn btn-primary start-btn" (click)="startNewGame()">Start new game</button>
+</div>

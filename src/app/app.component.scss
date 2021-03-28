@@ -1,0 +1,54 @@
+.container-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+
+.player-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 394px);
+  gap: 25px;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  gap: 16px;
+
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .grid {
+      grid-template-columns: repeat(2, 150px);
+  }
+}
+
+.current-player {
+  background-color: #3f51b5;
+  color: #fff;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+      transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+      transform: translate3d(4px, 0, 0);
+  }
+}
