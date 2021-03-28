@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
 ## Demo - Play the game here.
-You can play the game here `https://sreejith.github.io/memory-card-game/`
+You can play the game here --> [Memory Card Game](https://sreejith.github.io/memory-card-game/).
 
 ## Development server
 
