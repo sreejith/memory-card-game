@@ -1,15 +1,10 @@
-.container-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate( -50%, -50% );
-}
 
 .player-card-grid {
   display: grid;
   grid-template-columns: repeat(2, 394px);
   gap: 25px;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .grid {

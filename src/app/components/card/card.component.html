@@ -1,8 +1,17 @@
-<div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
+<!-- <div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
   <div class="back">
       <img src="assets/images/cardBack.jpg">
   </div>
   <div class="front">
       <img [src]="data.imageURL">
   </div>
-</div>
+</div> -->
+
+<mat-card class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
+  <div class="back">
+    <img src="assets/images/cardBack.jpg">
+  </div>
+  <div class="front">
+      <img [src]="data.imageURL">
+  </div>
+</mat-card>

@@ -1,7 +1,7 @@
 <mat-toolbar color="primary" class="text-center">
   Memory Card Game
 </mat-toolbar>
-<div class="container container-center">
+<div class="container">
   <div class="player-card-grid p-16 mb-4">
     <mat-card *ngFor="let player of players; let i=index" [ngClass]="{'current-player': player.isCurrentPlayer}">
       <mat-card-header>
